@@ -75,8 +75,26 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
         }
         
+        /* Image Container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 1em 0;
+            max-width: 100%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+
         .portfolio-item:hover {
             transform: scale(1.02);
         }
@@ -132,15 +150,19 @@
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <h3>Al Carpone</h3>
-                <IMG SRC="https://raw.githubusercontent.com/li-tomecek/li-tomecek.github.io/refs/heads/main/embeds/AlCarpone%20beside%20Bank.png" width="600">
-                <IMG SRC="https://raw.githubusercontent.com/li-tomecek/li-tomecek.github.io/refs/heads/main/embeds/supermarket%20screenshot.png" width="600">
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/li-tomecek/li-tomecek.github.io/refs/heads/main/embeds/AlCarpone%20beside%20Bank.png" alt="Al Carpone beside Bank screenshot">
+                    <img src="https://raw.githubusercontent.com/li-tomecek/li-tomecek.github.io/refs/heads/main/embeds/supermarket%20screenshot.png" alt="Supermarket screenshot">
+                </div>
                 <p>A driving game term-project developed in C++ as a team of five. Rob the city bank, upgrade your car at garages, and avoid the police to escape town!</p>
-                <a href="https://github.com/sebastiancollard/Al-Carpone">View project on GitHub<br></a>
+                <a href="https://github.com/sebastiancollard/Al-Carpone">View project on GitHub</a><br>
                 <a href="https://www.youtube.com/watch?v=XYE0egtQ99s&feature=youtu.be&ab_channel=DISPLACE">Al Carpone ~ Demo Video</a> 
             </div>
             <div class="portfolio-item">
                 <h3>Robot Runner</h3>
-                 <IMG SRC="https://github.com/raboull/Director_AI_Game/assets/60552485/2e49166e-f27e-43ec-af2f-98454a4336e6" width="600">
+                <div class="image-container">
+                    <img src="https://github.com/raboull/Director_AI_Game/assets/60552485/2e49166e-f27e-43ec-af2f-98454a4336e6" alt="Robot Runner screenshot">
+                </div>
                 <p>A small-scale Unreal Engine university project designed to implement learned AI techniques. Developed as a team of three. Robot Runner uses the AI Director concept to dynamically adjust the difficulty of this endless runner.</p>
                 <a href="https://github.com/raboull/Director_AI_Game">View project on GitHub</a>
             </div>
@@ -152,11 +174,18 @@
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <h3>Ongoing Unreal Project</h3>
+                <div class="image-container">
+                    <img src="path/to/ongoing-project-image1.jpg" alt="Ongoing Unreal Project Image 1">
+                    <img src="path/to/ongoing-project-image2.jpg" alt="Ongoing Unreal Project Image 2">
+                </div>
                 <p>A brief description of your Unreal project goes here.</p>
                 <a href="#" target="_blank">View Project</a>
             </div>
             <div class="portfolio-item">
                 <h3>Unfinished Unity Project</h3>
+                <div class="image-container">
+                    <img src="path/to/unfinished-project-image1.jpg" alt="Unfinished Unity Project Image 1">
+                </div>
                 <p>A brief description of your Unity project goes here.</p>
                 <a href="#" target="_blank">View Project</a>
             </div>
@@ -172,15 +201,14 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <!--<p></p>-->
         <a href="mailto:liana.tomecek@gmail.com">Email</a> |
         <a href="https://www.linkedin.com/in/liana-tomecek" target="_blank">LinkedIn</a>
     </section>
 
     <!-- Footer -->
-    <!--<footer>
+    <footer>
         <p>&copy; 2024 Liana Tomecek. All Rights Reserved.</p>
-    </footer>-->
+    </footer>
 
 </body>
 </html>
