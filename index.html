@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liana Tomecek - Digital Portfolio</title>
+    <title>Liana Tomecek ~ Digital Portfolio</title>
     <style>
         /* Global Styles */
         * {
@@ -33,7 +33,7 @@
         }
         
         header h1 {
-            font-size: 2.5em;
+            font-size: 1.8em; /* Reduced font size */
         }
         
         header p {
@@ -53,14 +53,23 @@
         }
         
         /* Portfolio Section */
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1em;
+        .portfolio-category {
             padding: 2em;
             background: #f4f4f4;
         }
         
+        .portfolio-category h2 {
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1em;
+        }
+
         .portfolio-item {
             background: #fff;
             padding: 1em;
@@ -96,7 +105,7 @@
         /* Responsive Design */
         @media (max-width: 600px) {
             header h1 {
-                font-size: 2em;
+                font-size: 1.5em;
             }
         }
     </style>
@@ -106,52 +115,66 @@
     <!-- Header Section -->
     <header>
         <h1>Liana Tomecek</h1>
-        <p></p>
+        <p>BSc in Computer Science</p>
     </header>
 
     <!-- About Section -->
     <section class="about" id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm a recent graduate with a BSc in Computer Science and Game Development Concentration. I'm currently learning Unreal Engine, Unity and basic 3D Modelling with Blender.</p>
+        <p>Hello! I'm a recent graduate with a BSc in Computer Science and a concentration in Game Development. I'm currently learning Unreal Engine, Unity, and 3D modeling with Blender.</p>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-item">
-            <h3>Al Carpone</h3>
-            <p>A brief description of your project goes here.</p>
-            <a href="#" target="_blank">View Project</a>
+    <!-- Portfolio Sections -->
+    <section class="portfolio-category" id="Games">
+        <h2>Game Development Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Al Carpone</h3>
+                <p>A brief description of your project goes here.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Robot Runner</h3>
+                <p>A brief description of your project goes here.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
         </div>
-        <div class="portfolio-item">
-            <h3>Robot Runner</h3>
-            <p>A brief description of your project goes here.</p>
-            <a href="#" target="_blank">View Project</a>
+    </section>
+
+    <section class="portfolio-category" id="Ongoing Projects">
+        <h2>Unreal Engine Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Ongoing Unreal Project</h3>
+                <p>A brief description of your Unreal project goes here.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Unfinished Unity Project</h3>
+                <p>A brief description of your Unity project goes here.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
         </div>
-        <div class="portfolio-item">
-            <h3>Ongoing Unreal Proj</h3>
-            <p>A brief description of your project goes here.</p>
-            <a href="#" target="_blank">View Project</a>
+    </section>
+
+    <section class="portfolio-category" id="Other">
+        <h2>Unity Projects</h2>
+        <div class="portfolio-grid">
         </div>
-        <div class="portfolio-item">
-            <h3>Unfinished Unity Proj</h3>
-            <p>A brief description of your project goes here.</p>
-            <a href="#" target="_blank">View Project</a>
-        </div>
-        <!-- Add more portfolio items as needed -->
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <!--<p>[text goes here]</p>-->
+        <!--<p></p>-->
         <a href="mailto:liana.tomecek@gmail.com">Email</a> |
-        <a href="www.linkedin.com/in/liana-tomecek">LinkedIn</a> |
+        <a href="https://www.linkedin.com/in/liana-tomecek" target="_blank">LinkedIn</a>
     </section>
 
     <!-- Footer -->
     <!--<footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-    </footer>
+        <p>&copy; 2024 Liana Tomecek. All Rights Reserved.</p>
+    </footer>-->
 
 </body>
 </html>
