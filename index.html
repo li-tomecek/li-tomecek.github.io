@@ -93,17 +93,22 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 15px; /* Increased gap between images */
-            margin: 1.5em 0; /* Added margin around the image container */
+            gap: 15px;
+            margin: 1.5em 0;
             max-width: 100%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 455px;
         }
         .image-container-solo {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 15px; /* Increased gap between images */
-            margin: 1.5em 0; /* Added margin around the image container */
+            gap: 15px;
+            margin: 1.5em 0;
             max-width: 100%;
         }
 
@@ -111,12 +116,6 @@
             width: 100%;
             height: auto;
             max-width: 500px;
-        }
-    
-        .image-container img {
-            width: 100%;
-            height: auto;
-            max-width: 455px;
         }
         
         /*.image-container img:hover {
@@ -173,19 +172,22 @@
     </section>
 
     <!-- Portfolio Sections -->
+    <!-- GAMES -->
     <section class="portfolio-category" id="Games">
         <h2>Games</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <h3>Al Carpone</h3>
                 <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/li-tomecek/li-tomecek.github.io/refs/heads/main/embeds/AlCarpone%20beside%20Bank.png" alt="Al Carpone Beside Bank screenshot">
-                    <video width="465" controls>
+                    <video width="455" controls autoplay muted>
+                      <source src="./embeds/al-carpone-chase.mp4" type="video/mp4">
+                    </video>
+                    <video width="455" controls>
                       <source src="./embeds/al-carpone-disguise.mp4" type="video/mp4">
                     </video> 
                 </div>
                 <p>A driving game term-project developed in C++ as a team of five. Rob the city bank, upgrade your car at garages, and avoid the police to escape town! <br />
-                    My role in development maintly involved game logic, including the implementation of usable items, as well as enemy patrolling and detection. </p>
+                    My role in development mainly involved game logic, including the implementation of usable items as well as enemy patrolling and detection. </p>
                 <a href="https://github.com/sebastiancollard/Al-Carpone">View project on GitHub</a><br>
                 <a href="https://www.youtube.com/watch?v=XYE0egtQ99s&feature=youtu.be&ab_channel=DISPLACE">Al Carpone ~ Full Demo Video</a> 
             </div>
@@ -202,12 +204,13 @@
             </div>
         </div>
     </section>
-
+    
+    <!-- ONGOING -->
     <section class="portfolio-category" id="Ongoing Projects">
         <h2>Ongoing Projects</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <h3>Ongoing Unreal "RPG Roguelike"</h3>
+                <h3>Unreal "RPG Roguelike"</h3>
                 <div class="image-container">
                     <img src="path/to/ongoing-project-image1.jpg" alt="Ongoing Unreal Project Image 1">
                     <img src="path/to/ongoing-project-image2.jpg" alt="Ongoing Unreal Project Image 2">
@@ -237,16 +240,19 @@
         </div>
     </section>
 
+    <!-- SMALLER & HOBBIES -->
     <section class="portfolio-category" id="Other">
         <h2>Smaller Projects & Hobbies</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <h3> Blender Animation Project</h3>
                 <div class="image-container-solo">
-                    <img src="https://github.com/li-tomecek/li-tomecek.github.io/blob/main/embeds/chess%20animation.gif?raw=true" alt="Self-Portrait">
+                    <video width="455" controls muted>
+                      <source src="assign2MP4" type="video/mp4">
+                    </video>
                 </div>
                 <p>
-                    A short university animation project as a means to learn the basics of blender and to implement some of the learned "12 Principles of Animation". A pawn jumps in front of its queen to protect it from an opposing pawn.
+                    A short university animation project as a means to learn the basics of blender; I try to implement some of the learned "12 Principles of Animation" such as squash & stretch. A pawn jumps in front of its queen to protect it from an opposing pawn.
                 </p>  
             </div>
 
