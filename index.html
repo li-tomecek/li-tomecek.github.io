@@ -92,11 +92,26 @@
             margin: 1.5em 0; /* Added margin around the image container */
             max-width: 100%;
         }
+        .image-container-solo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px; /* Increased gap between images */
+            margin: 1.5em 0; /* Added margin around the image container */
+            max-width: 100%;
+        }
+
+         .image-container-solo img {
+            width: 100%;
+            height: auto;
+            max-width: 480px;
+        }
     
         .image-container img {
             width: 100%;
             height: auto;
-            max-width: 465px;
+            max-width: 455px;
         }
         .image-container img:hover {
             transform: scale(1.35);
@@ -170,7 +185,7 @@
             </div>
             <div class="portfolio-item">
                 <h3>Robot Runner</h3>
-                <div class="image-container">
+                <div class="image-container-solo">
                     <img src="https://github.com/raboull/Director_AI_Game/assets/60552485/2e49166e-f27e-43ec-af2f-98454a4336e6" alt="Robot Runner GIF">
                 </div>
                 <p>A small-scale Unreal Engine university project designed to implement learned AI techniques. Robot Runner uses the AI Director concept to dynamically adjust the difficulty of this endless runner.<br />
@@ -202,7 +217,7 @@
             </div>
             <div class="portfolio-item">
                 <h3>Apex of the Arcane</h3>
-                <div class="image-container">
+                <div class="image-container-solo">
                     <img src="https://github.com/li-tomecek/MementosCrawler/assets/60552485/389d9454-9dd1-4862-a1e1-f5046297c9f7" alt="Ongoing Unreal Project Image 1">
                 </div>
                 <p> 
@@ -218,7 +233,7 @@
     <section class="portfolio-category" id="Other">
         <h2>Other</h2>
         <div class="portfolio-grid">
-            <div class="portfolio-item">
+            <div class="image-container-solo">
                 <h3>Mark-Making Self Portrait</h3>
                 <div class="image-container">
                     <img src="https://github.com/li-tomecek/li-tomecek.github.io/blob/main/embeds/self-portrait.png?raw=true" alt="Self-Portrait">
