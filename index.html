@@ -30,7 +30,7 @@
             color: #fff;
             padding: 2em 1em;
             text-align: center;
-            font-size: 1.5em; /* Reduced font size */
+            font-size: 1.5em;
         }
         
         header p {
@@ -68,7 +68,7 @@
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1em;
         }
 
@@ -77,50 +77,33 @@
             padding: 1em;
             border: 1px solid #ddd;
             transition: transform 0.3s;
+            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
         }
-         .portfolio-item h3{
+        .portfolio-item h3 {
             font-size: 1.6em;
-            text-align: center;
         }
         
-        /* Image Container */
-        .image-container {
+        /* Image & Video Container */
+        .image-container,
+        .image-container-solo {
             display: flex;
             justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
             gap: 15px;
             margin: 1.5em 0;
-            max-width: 100%;
+            width: 100%;
         }
-        .image-container img {
+        .image-container img,
+        .image-container video,
+        .image-container-solo img,
+        .image-container-solo video {
             width: 100%;
             height: auto;
             max-width: 455px;
         }
-        .image-container-solo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 1.5em 0;
-            max-width: 100%;
-        }
-
-         .image-container-solo img {
-            width: 100%;
-            height: auto;
-            max-width: 500px;
-        }
-        
-        /*.image-container img:hover {
-            transform: scale(1.35);
-        } */
 
         .portfolio-item:hover {
             transform: scale(1.02);
@@ -148,9 +131,9 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.5em;
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
             }
         }
     </style>
@@ -176,7 +159,7 @@
     <section class="portfolio-category" id="Games">
         <h2>Games</h2>
         <div class="portfolio-grid">
-           
+            
             <!-- AL CARPONE -->
             <div class="portfolio-item">
                 <h3>Al Carpone</h3>
@@ -206,6 +189,7 @@
                 </p>
                 <a href="https://github.com/raboull/Director_AI_Game">View project on GitHub</a>
             </div>
+            
         </div>
     </section>
     
@@ -244,6 +228,7 @@
                 </p>
                  <a href="https://github.com/li-tomecek/MementosCrawler" target="_blank">View project on GitHub</a>
             </div>
+            
         </div>
     </section>
 
@@ -340,14 +325,14 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 style="color:white;"> Contact Me </h2>
+        <h2>Contact Me</h2>
         <a href="mailto:liana.tomecek@gmail.com">Email</a> |
         <a href="https://www.linkedin.com/in/liana-tomecek" target="_blank">LinkedIn</a>
     </section>
 
     <!-- Footer -->
     <footer>
-       <!-- <p>&copy; 2024 Liana Tomecek. All Rights Reserved.</p> -->
+        <!--<p>&copy; 2024 Liana Tomecek. All Rights Reserved.</p>-->
     </footer>
 
 </body>
