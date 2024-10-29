@@ -189,13 +189,17 @@
             height: 100%;
             overflow: auto; /* Enable scroll if needed */
             background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            align-items: center; /* Centers vertically */
+            justify-content: center; /* Centers horizontally */
         }
         
         .modal-content {
             margin: auto;
             display: block;
-            max-width: 90%;
-            max-height: 90%;
+            max-width: 90vw; /* Limit width to 90% of viewport */
+            max-height: 90vh; /* Limit height to 90% of viewport */
+            width: auto;
+            height: auto;
             border-radius: 8px;
         }
 
