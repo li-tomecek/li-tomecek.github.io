@@ -24,7 +24,7 @@
             text-decoration: none;
         }
         
-        /* Header Section */
+        /*------------------ Header Section----------------------- */
         header {
             background: #1f3f49; /* Deep Teal */
             color: #fff; /* White text */
@@ -65,7 +65,7 @@
             text-align: center;
         }*/
         
-        /* About Section */
+        /* -----------------About Section----------------------- */
         .about {
             padding: 2em;
             text-align: center;
@@ -81,7 +81,7 @@
             margin-bottom: 0.5em;
         }
         
-        /* Portfolio Section */
+        /* ---------------Portfolio Section ----------------------*/
         .portfolio-category {
             padding: 2em;
             background: #fdfaf0; /* Light Cream */
@@ -157,7 +157,7 @@
              transform: scale(1.20);    
         }*/
         
-        /* Contact Section */
+        /* -------------------Contact Section -----------------------*/
         .contact {
             background: #333;
             color: #fff;
@@ -176,6 +176,51 @@
             padding: 1em;
             background: #007acc;
             color: #fff;
+        }
+
+        /* ----------------Modal styles --------------------*/
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 100; /* Show on top of other elements */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        /* Center the modal content */
+        .modal img {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Close button */
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         /* Responsive Design */
@@ -417,6 +462,41 @@
     <footer>
         <!--<p>&copy; 2024 Liana Tomecek. All Rights Reserved.</p>-->
     </footer>
+
+
+     <!-- Modal for enlarged image -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <!-- JavaScript for Modal functionality -->
+    <script>
+        // Get modal elements
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var span = document.getElementsByClassName("close")[0];
+
+        // Open modal when any image is clicked
+        document.querySelectorAll('.image-container img').forEach(img => {
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src; // Set modal image src to clicked image src
+            };
+        });
+
+        // Close modal on clicking the close button
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside of the image
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>
