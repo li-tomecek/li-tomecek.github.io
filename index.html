@@ -41,6 +41,17 @@
             color: #fff; /* White text */ 
             font-size: 1.9em;
         }
+
+        /* contect info in header space */
+        .header-contact-info {
+            margin-right: auto; /* Push the contact info to the right */
+            margin-left: 1em; /* Add space between the email and the header edge */
+            color: #fff;
+            font-size: 0.8em;
+        }
+        header a {
+            color: #fff; /* Ensure email link is white */
+        }
         
         /* About Section */
         .about {
@@ -84,7 +95,6 @@
             padding: 4em;
             border: 1px solid #ddd;
             transition: transform 0.3s;
-            text-align: left;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -165,6 +175,9 @@
     <header>
         <h1>Liana Tomecek</h1>
         <p>Digital Portfolio</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:liana.tomecek@gmail.com">liana.tomecek@gmail.com</a></p>
+        </div>
     </header>
 
     <!-- About Section -->
