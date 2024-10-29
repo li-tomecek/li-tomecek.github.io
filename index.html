@@ -26,7 +26,7 @@
         
         /* Header Section */
         header {
-            background: #004d4d; /* Deep Teal */
+            background: #1f3636; /* Deep Teal */
             color: #fff; /* White text */
             padding: 2em 1em;
             text-align: center;
@@ -72,22 +72,33 @@
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-            gap: 1em;
+            gap: 3em;
         }
 
         .portfolio-item {
             background: #fff;
-            padding: 2em;
+            padding: 4em;
             border: 1px solid #ddd;
             transition: transform 0.3s;
             text-align: left;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center vertically */
             align-items: center;
         }
         .portfolio-item h3 {
             font-size: 1.6em;
+            margin-bottom: 0.5em; /* Space below h3 */
+            align-self: flex-start; /* Align h3 at the top of the item */
+        }
+        /* contains the images and descriptions for wach item */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            flex-grow: 1; /* Allow this wrapper to take remaining space */
+            width: 100%; /* Ensure it takes full width */
+            text-align: center; /* Center text if needed */
         }
         
         /* Image & Video Container */
