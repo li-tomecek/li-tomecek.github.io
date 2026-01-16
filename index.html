@@ -132,8 +132,12 @@
             text-align: left;
             margin-top: 1em;
         }
-        .content-wrapper a {
-            margin-top: auto;   /* pushes links wrapped in content wrapper to bottom*/
+        
+        .card-links {
+            margin-top: auto;
+            display: flex;
+            gap: 0.75rem;
+            flex-direction: column;
         }
 
         
@@ -305,7 +309,9 @@
                         Developed as a team of three, where each member took an active role in the entire design and implementation process. Using in-game parameters such as player health, a simple mathematical model is used to calculate the game's "intensity". 
                         The difficulty is raised if this intensty remains low and is lowered after spikes of high intensity.
                     </p>
-                    <a href="https://github.com/raboull/Director_AI_Game">View project on GitHub</a>
+                    <div class="card-links">
+                        <a href="https://github.com/raboull/Director_AI_Game">View project on GitHub</a>
+                    </div>
                 </div>
             </div>
 
