@@ -102,16 +102,16 @@
         .portfolio-grid {
             display: grid;
             gap: 2em;
-            grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
         }
 
         /* Max 2 columns per row in grid */
         .portfolio-grid-2max {
             display: grid;
             gap: 2.5em;
+            justify-content: center;
             /* max 2 columns, auto-collapse */
             grid-template-columns: repeat(auto-fit, minmax(35%, 40%));
-               /* try 1100–1300 */
         }
 
         .portfolio-item {
