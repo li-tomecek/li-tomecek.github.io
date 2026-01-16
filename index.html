@@ -98,10 +98,16 @@
 
         }
 
+        /* Autosize elements in grid*/
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-            gap: 3em;
+            gap: 2em;
+        }
+
+        /* Max 2 columns per row in grid */
+        .portfolio-grid-2max {
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .portfolio-item {
@@ -277,7 +283,7 @@
     <!-- GAMES -->
     <section class="portfolio-category" id="Games">
         <h2>Games</h2>
-        <div class="portfolio-grid">
+        <div class="portfolio-grid-2max">
             
             <!-- AL CARPONE -->
             <div class="portfolio-item">
