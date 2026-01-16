@@ -116,22 +116,26 @@
         }
         .portfolio-item h3 {
             font-size: 1.9em;
-            margin-bottom: 0.5em; /* Space below h3 */
-            margin: 0;             /* Remove bottom margin */
-            margin-top: 0.35em;     /* Attempt to align this at the top im losing my mind*/
+            margin-bottom: 0.75rem;     /* Space below h3 */
+            margin: 0;                  /* Remove bottom margin */
+            margin-top: 0.35em;         /* Attempt to align this at the top im losing my mind*/
             text-align: center;
         }
         /* contains the images and descriptions for each item */
         .content-wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Content it pushed to top */
-            align-items: center; /* Center content horizontally */
-            flex-grow: 1; /* Allow this wrapper to take remaining space */
-            width: 100%; /* Ensure it takes full width */
+            justify-content: flex-start;    /* Content it pushed to top */
+            align-items: center;            /* Center content horizontally */
+            flex-grow: 1;                   /* Allow this wrapper to take remaining space */
+            width: 100%;                    /* Ensure it takes full width */
             text-align: left;
             margin-top: 1em;
         }
+        .content-wrapper a {
+            margin-top: auto;   /* pushes links wrapped in content wrapper to bottom*/
+        }
+
         
         /* Image & Video Container */
         .image-container{
@@ -139,7 +143,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 15px;
-            margin: 1.5em 0;
+            margin: 1.25em 0;
             width: 100%;
         }
         .image-container img,
@@ -230,7 +234,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .portfolio-grid {
-                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+                grid-template-columns: 1fr;
             }
             .portfolio-item {
                 padding: 1em;    /* padding on phone screens is too big - media ends up way too small*/
