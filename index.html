@@ -112,6 +112,7 @@
             /* max 2 columns, auto-collapse */
             grid-template-columns: repeat(auto-fit, minmax(35%, 40%));
             max-width: 1200px;   /* try 1100–1300 */
+            padding: 1rem; /* Margin around the entire grid on smaller screens */
         }
 
         .portfolio-item {
@@ -256,6 +257,13 @@
                 padding: 1em;    /*same as above*/
                 margin-left: 0;
                 margin-right: 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .portfolio-grid-2max {
+                /* Increase the padding around the whole container on large screens */
+                padding: 3rem; 
             }
         }
     </style>
