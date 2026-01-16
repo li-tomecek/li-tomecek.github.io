@@ -167,6 +167,21 @@
             max-width: 750px;
         }
 
+        /* For displaying three images horizontally*/
+        .image-row-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+
+        .image-row-3 img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+
+
         .portfolio-item:hover {
             transform: scale(1.02);
         }
@@ -256,6 +271,10 @@
                 padding: 1em;    /*same as above*/
                 margin-left: 0;
                 margin-right: 0;
+            }
+            
+            .image-row-3 {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -428,8 +447,12 @@
             <div class="portfolio-item">
                 <h3> The Acolyte </h3>
                 <div class="content-wrapper">
+                    <div class="image-container image-row-3">
+                        <img src="./embeds/Acolyte Screenshots/acolyte_maya_front.PNG" alt="Acolyte view 1">
+                        <img src="./embeds/Acolyte Screenshots/acolyte_maya_sode.PNG" alt="Acolyte view 2">
+                        <img src="./embeds/Acolyte Screenshots/acolyte_front_materials_narrow.png" alt="Acolyte view 3">
+                    </div>
                     <div class="image-container">
-                         <img src="./embeds/453Assign3.gif" alt="B-Spline Curves GIF">
                         <img src="./embeds/acolyte_all.png" alt="Solar System GIF">
                     </div>
                     <p>
