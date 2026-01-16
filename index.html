@@ -101,8 +101,8 @@
         /* Autosize elements in grid*/
         .portfolio-grid {
             display: grid;
-            gap: 1.5em;
-            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
         }
 
         /* Max 2 columns per row in grid */
@@ -110,7 +110,8 @@
             display: grid;
             gap: 2.5em;
             /* max 2 columns, auto-collapse */
-            grid-template-columns: 1fr     /*repeat(auto-fit, minmax(600px, 1fr))*/;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            max-width: 1600px;
             margin: 0 auto;     /*center the grid*/
         }
 
@@ -241,12 +242,12 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             .portfolio-grid {
                 grid-template-columns: 1fr;
             }
             .portfolio-grid-2max {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-columns: 1fr;
             }
             .portfolio-item {
                 padding: 1em;    /* padding on phone screens is too big - media ends up way too small*/
