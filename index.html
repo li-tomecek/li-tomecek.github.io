@@ -196,7 +196,7 @@
 
         /* ----------------Modal styles --------------------*/
         .modal {
-            display: flex;
+            display: none;
             position: fixed;
             z-index: 100;               /* Show on top of other elements */
             left: 0;
@@ -574,7 +574,7 @@
         // Open modal when any image is clicked
         document.querySelectorAll('.image-container img').forEach(img => {
             img.onclick = function () {
-                modal.style.display = "block";
+                modal.style.display = "flex";
                 modalImg.src = this.src; // Set modal image src to clicked image src
             };
         });
